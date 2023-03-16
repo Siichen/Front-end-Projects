@@ -1,0 +1,147 @@
+<!-- Initialization -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link the CSS style to the page -->
+    <link rel="stylesheet" href="Dashboard_css.css">
+    <!-- Add Google Font to the page -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <!-- Add icons to the sidebar -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Name the page -->
+    <title>50% OFF Foodie Hunter</title>
+    <!-- Add a small icon for the page -->
+    <link rel="icon" type="image/x-icon" href="icon.png">
+</head>
+
+<body>
+    <!-- Create a header -->
+    <input type="checkbox" id="cart">
+    <label for="cart" class="label-cart"><span class="fas fa-shopping-cart"></span></label>
+    <h3 class="logo">Foodie Hunter</h3>
+    <!-- Create a sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-menu">
+            <span class="fas fa-search"></span>
+            <a href="#">Search</a>
+        </div>
+        <div class="sidebar-menu">
+            <span class="fas fa-home"></span>
+            <a href="#">Home</a>
+        </div>
+        <div class="sidebar-menu">
+            <span class="fas fa-heart"></span>
+            <a href="#">Favs</a>
+        </div>
+        <div class="sidebar-menu">
+            <span class="fas fa-user"></span>
+            <a href="#">Profile</a>
+        </div>
+        <div class="sidebar-menu">
+            <span class="fas fa-sliders-h"></span>
+            <a href="#">Setting</a>
+        </div>
+    </div>
+    <!-- Create main dashboard -->
+    <div class="dashboard">
+        <div class="dashboard-banner">
+            <img src="banner.jpg">
+            <div clss="banner-promo">
+                <h1>50% OFF<br>Tasty Food<br>On Your Hand</h1>
+            </div>
+        </div>
+        <h3 class="dashboard-title">Recommend Food For You</h3>
+        <div calss="dashboard-menu">
+            <a href="#">Favorites</a>
+            <a href="#">Best Seller</a>
+            <a href="#">Near me</a>
+            <a href="#">Promotion</a>
+            <a href="#">Top Rated</a>
+            <a href="#">All</a>
+        </div>
+        <div class="dashboard-content">
+            <div class="dashboard-card">
+                <img class="card-image" src="Pizza.jpg" alt="Pizza">
+                <div class="card-detail">
+                    <h4>Margherita Pizza<span> $9.99</span></h4>
+                    <p>Lorem ipsum sit</p>
+                    <p class="card-time"><span class="fas fa-clock"></span>15-30 min</p>
+                </div>
+            </div>
+            <div class="dashboard-card">
+                <img class="card-image" src="Steak.jpg" alt="Steak">
+                <div class="card-detail">
+                    <h4>Wood Smoked Steak<span> $16.99</span></h4>
+                    <p>Lorem ipsum sit</p>
+                    <p class="card-time"><span class="fas fa-clock"></span>30-45 min</p>
+                </div>
+            </div>
+            <div class="dashboard-card">
+                <img class="card-image" src="Taco.jpg" alt="Taco">
+                <div class="card-detail">
+                    <h4>Mexican Taco<span> $7.99</span></h4>
+                    <p>Lorem ipsum sit</p>
+                    <p class="card-time"><span class="fas fa-clock"></span>15-30 min</p>
+                </div>
+            </div>
+            <div class="dashboard-card">
+                <img class="card-image" src="Burger.jpg" alt="Burger">
+                <div class="card-detail">
+                    <h4>Bolognese Burger<span> $12.99</span></h4>
+                    <p>Lorem ipsum sit</p>
+                    <p class="card-time"><span class="fas fa-clock"></span>15-30 min</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Create order dashboard -->
+    <div class="dashboard-order">
+        <h3>Order Menu</h3>
+        <div class="order-address">
+            <p>Address Delivery</p>
+            <h4>Sophia Antipolis, 60 Rue Fedor Dostoïevski, 06902 Valbonne</h4>
+        </div>
+        <div class="oder-time">
+            <span class="fas fa-clock"></span> 15-45 min <span class="fas fa-map-marker-alt"> 6.8 km</span>
+        </div>
+        <div class="order-wrapper">
+            <div class="order-card">
+                <img class="order-image" src="Steak.jpg" alt="Thank you for ordering">
+                <div class="order-detail">
+                    <p>Lorem ipsum dolor sit amet</p>
+                    <i class="fas fa-times"></i><input type="text" value="2">
+                </div>
+                <h4 class="order-price">$16.99</h4>
+            </div>
+            <div class="order-card">
+                <img class="order-image" src="Taco.jpg" alt="Thank you for ordering">
+                <div class="order-detail">
+                    <p>Lorem ipsum dolor sit amet</p>
+                    <i class="fas fa-times"></i><input type="text" value="1">
+                </div>
+                <h4 class="order-price">$3.995</h4>
+            </div>
+        </div>
+        <hr class="divider">
+        <div class="order-total">
+            <p>Subtotal:<span>$22.04</span></p>
+            <p>Tax:<span>5%</span></p>
+            <p>Delivery Fee <span>$0 (For New Customer)</span></p>
+            <div class="oder-promo">
+                <input class="input-promo" type="text" placeholder="Apply Voucher">
+                <button class="botton-promo">Apply Promo</button>
+            </div>
+            <hr class="divider">
+            <p>Total <span>$22.04</span></p>
+        </div>
+        <button class="checkout">
+            Checkout
+        </button>
+    </div>
+</body>
+
+</html>
